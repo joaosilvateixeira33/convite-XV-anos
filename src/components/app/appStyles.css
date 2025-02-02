@@ -21,19 +21,21 @@
         }
         
         .frase{
-            height: 16%;
+            height: 18%;
+            margin-left: 3px;
         }
         
         
         .carta{
             margin-top: 20px;
-            height: 20%;
+            height: 19%;
         }
 
         .selo{
             height: 6%;
             position: absolute;
-            bottom: 24%;
+            bottom: 23%;
+            cursor: pointer;
         }
     }
 }
