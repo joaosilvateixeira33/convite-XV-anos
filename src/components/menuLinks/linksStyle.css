@@ -1,0 +1,13 @@
+.dateImg{
+    height: 5%;
+    margin-top: 20px;
+}
+
+.links-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
