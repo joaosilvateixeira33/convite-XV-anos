@@ -4,21 +4,38 @@
     box-sizing: border-box;
 }
 
-.app{
+.main{
     background-image: url('../../assets/fundo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+    .container-message{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .header-image{
+            height: 24%;
+        }
+        
+        .frase{
+            height: 16%;
+        }
+        
+        
+        .carta{
+            margin-top: 20px;
+            height: 20%;
+        }
+
+        .selo{
+            height: 6%;
+            position: absolute;
+            bottom: 24%;
+        }
+    }
 }
 
-.header-image{
-    height: 24%;
-}
 
-.frase{
-    height: 24%;
-}
