@@ -1,19 +1,20 @@
+import { useState } from "react";
 import "./appStyles.css";
 import { MenuLinks } from "../menuLinks";
-
-import { useState } from "react";
 import imageHeader from "../../assets/header-image.png";
 import imageFrase from "../../assets/frase.png";
 import imageCarta from "../../assets/carta.png";
-import imgSelo from "../../assets/selo.png"
+import imgSelo from "../../assets/selo.png";
+import { MusicPlayer } from "../musicPlayer/index.jsx";
 
 function App() {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
     <div className="main">
+      <MusicPlayer />
       {isClicked ? (
-        <MenuLinks onBack={() => setIsClicked(false)} />
+        <MenuLinks />
       ) : (
         <div className="container-message">
           <img src={imageHeader} alt="image logo" className="header-image" />
