@@ -15,21 +15,11 @@ export function MusicPlayer() {
           .then(() => setIsPlaying(true))
           .catch(err => console.error("Autoplay bloqueado:", err));
       }
-      
-      document.removeEventListener("click", handleUserInteraction);
-      document.removeEventListener("keydown", handleUserInteraction);
-      document.removeEventListener("touchstart", handleUserInteraction);
+  
     };
-
     document.addEventListener("click", handleUserInteraction);
-    document.addEventListener("keydown", handleUserInteraction);
-    document.addEventListener("touchstart", handleUserInteraction);
 
-    return () => {
-      document.removeEventListener("click", handleUserInteraction);
-      document.removeEventListener("keydown", handleUserInteraction);
-      document.removeEventListener("touchstart", handleUserInteraction);
-    };
+
   }, []);
 
   const togglePlay = () => {
