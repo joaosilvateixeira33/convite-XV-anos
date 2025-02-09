@@ -20,11 +20,16 @@ function App() {
           <img src={imageHeader} alt="image logo" className="header-image" />
           <img src={imageFrase} alt="frase image" className="frase" />
           <img
-            src={imageCarta}
-            alt="carta image"
-            className="carta"
-          />
-          <img src={imgSelo} alt="selo" className="selo" onClick={() => setIsClicked(true)}/>
+              src={imageCarta}
+              alt="carta image"
+              className="carta"
+            />
+            <img 
+              src={imgSelo} 
+              alt="selo" 
+              className="selo" 
+              onClick={() => setIsClicked(true)}
+            />
         </div>
       )}
   </div>

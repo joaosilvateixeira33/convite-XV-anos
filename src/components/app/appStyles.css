@@ -17,6 +17,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
 
         .header-image{
             height: 24%;
@@ -27,16 +28,17 @@
             margin-left: 3px;
         }
         
-        
         .carta{
-            margin-top: 20px;
+            margin-top: 10%;
             height: 19%;
         }
 
         .selo{
-            height: 6%;
             position: absolute;
-            bottom: 23%;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 6%;
             cursor: pointer;
         }
     }
